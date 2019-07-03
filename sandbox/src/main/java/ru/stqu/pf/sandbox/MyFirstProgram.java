@@ -1,5 +1,7 @@
 package ru.stqu.pf.sandbox;
 
+import static ru.stqu.pf.sandbox.Point.distance;
+
 public class MyFirstProgram {
     public static void main(String[] args) {
         hello("world");
@@ -10,6 +12,13 @@ public class MyFirstProgram {
 
         Rectangle r = new Rectangle(4, 6);
         System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
+
+        Point p1 = new Point(6,2);
+        Point p2 = new Point(2,4);
+
+        System.out.println("Расстояние между точками = " + distance(p1, p2));
+
+
     }
 
     public static void hello(String somebody) {
